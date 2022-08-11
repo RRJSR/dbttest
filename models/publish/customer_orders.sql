@@ -1,9 +1,9 @@
-{{ config( alias= 'customer_orders',
+{{ config( 
     schema= 'PUBLISH',
     database= 'RAW' 
 )}}
 
 SELECT c.*,o.* 
-FROM {{ source('STAGE', 'CUSTOMER') }} as c
-    left join {{ source('STAGE', 'ORDERS') }} as o
+FROM {{ ref('customer' )}} as c
+    left join {{ ref('orders' )}} as o
         on c.C_CUSTKEY=o.O_CUSTKEY

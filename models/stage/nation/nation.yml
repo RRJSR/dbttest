@@ -1,21 +1,15 @@
 version: 2
 models:
-  - name: customer
-    description: "{{ doc('CUSTOMER_docs') }}"
+  - name: nation
+    description: "{{ doc('NATION_docs') }}"
     database: RAW
     schema: STAGE
     
     columns:
-      - name: C_CUSTKEY
+      - name: N_NATIONKEY
         tests:
+          - not_null
           - unique
-          - not_null
-          - relationships:
-              to: ref('orders')
-              field: O_CUSTKEY
-      - name: C_NATIONKEY
-        tests:
-          - not_null
           - accepted_values:
               values:
                 - 0
@@ -43,4 +37,5 @@ models:
                 - 22
                 - 23
                 - 24
-            
+          
+          

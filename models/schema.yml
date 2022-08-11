@@ -30,4 +30,9 @@ sources:
       database: RAW
       tables:
          - name: CUSTOMER_ORDERS
+         - name: PART_PARTSUPP
+         - name: NATION_REGION
+         - name: NATION_REGION__SUPPLIER
+         - name: NATION_REGION__SUPPLIER___PART_PARTSUPP
+         - name: FINAL
          

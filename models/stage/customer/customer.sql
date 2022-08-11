@@ -1,7 +1,7 @@
-{{ config( alias= 'customer',
+{{ config( 
     schema= 'STAGE',
     database= 'RAW' 
 )}}
 
 SELECT * 
-FROM {{ source('RAW_SOURCE', 'CUSTOMER') }}
+FROM {{ source('RAW_SOURCE', 'CUSTOMER') }} 

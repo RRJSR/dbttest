@@ -1,4 +1,4 @@
-{{ config( alias= 'lineitem',
+{{ config( 
     schema= 'STAGE',
     database= 'RAW' 
 )}}

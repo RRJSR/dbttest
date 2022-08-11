@@ -1,4 +1,4 @@
-{{ config( alias= 'nation',
+{{ config( 
     schema= 'STAGE',
     database= 'RAW' 
 )}}
