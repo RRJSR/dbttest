@@ -12,3 +12,9 @@ sources:
       tables:
          - name: CUSTOMER
          - name: ORDERS
+    - name: PUBLISH
+      description: This is RAW_TEST Database Source Tables used for creating STANDARD_TEST Layer
+      database: RAW
+      tables:
+         - name: CUSTOMER_ORDERS
+         
