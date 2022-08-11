@@ -1,0 +1,12 @@
+version: 2
+models:
+  - name: supplier
+    description: "{{ doc('SUPPLIER_docs') }}"
+    database: RAW
+    schema: STAGE
+    
+    columns:
+      - name: S_SUPPKEY
+        tests:
+          - not_null
+          - unique

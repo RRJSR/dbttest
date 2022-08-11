@@ -1,0 +1,27 @@
+version: 2
+models:
+  - name: orders
+    description: "{{ doc('ORDERS_docs') }}"
+    database: RAW
+    schema: STAGE
+    
+    columns:
+      - name: O_ORDERKEY
+        tests:
+          - not_null
+          - unique
+      - name: O_CUSTKEY
+        tests:
+          - not_null
+      - name: O_ORDERSTATUS
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                - O
+                - F
+                - P
+                
+       
+          
+          

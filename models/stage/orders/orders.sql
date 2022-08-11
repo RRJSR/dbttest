@@ -1,4 +1,4 @@
-{{ config(
+{{ config( 
     schema= 'STAGE',
     database= 'RAW' 
 )}}
