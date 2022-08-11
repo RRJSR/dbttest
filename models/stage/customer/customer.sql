@@ -5,4 +5,3 @@
 
 SELECT * 
 FROM {{ source('RAW_SOURCE', 'CUSTOMER') }}
-where C_NATIONKEY NOT IN (14)
